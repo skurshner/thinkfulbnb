@@ -138,7 +138,7 @@ footer p {
 
 /* -------  Media Query ------- */
 @media all and (min-width: 480px) {
-  /* Form */
+  /* Search Form */
   header {
     display: flex;
     flex-wrap: wrap;
@@ -177,5 +177,7 @@ footer p {
   .group {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
   }
 }
