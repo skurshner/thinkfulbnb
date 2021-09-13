@@ -100,7 +100,6 @@ form {
 
 .form-wrapper {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
 }
@@ -138,3 +137,45 @@ footer p {
 }
 
 /* -------  Media Query ------- */
+@media all and (min-width: 480px) {
+  /* Form */
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  form {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .form-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: flex-start;
+    flex: 1;
+    margin: 0 3% 0 0;
+  }
+  form select,
+  form input {
+    margin: 0;
+    width: 100%;
+    height: 40px;
+  }
+
+  form button {
+    width: 200px;
+  }
+  form label {
+    margin: 0 0 10px 0;
+  }
+
+  /* ---  Groups & Items --- */
+  .group {
+    display: flex;
+    flex-direction: row;
+  }
+}
